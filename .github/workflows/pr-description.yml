@@ -1,0 +1,15 @@
+name: Pull Request Description Checker
+on:
+  pull_request:
+    branches:
+      - 'main'
+
+jobs:
+  check-pr-description:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check PR Description
+      uses: ./pr-description-checker
+      with:
+        github-token: ${{github.token}}
+        bodyContains: 'TESTS:,CHANGES:'
