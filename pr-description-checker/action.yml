@@ -7,4 +7,4 @@ inputs:
     description: 'Word that must be contained in the PR body, can be left blank'
 runs:
   using: 'node12'
-  main: 'pr-description-checker.js'
+  main: 'index.js'
