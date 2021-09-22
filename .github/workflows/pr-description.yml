@@ -14,4 +14,4 @@ jobs:
       uses: ./pr-description-checker
       with:
         github-token: ${{github.token}}
-        bodyContains: 'TESTS:,CHANGES:'
+        bodyContains: "TESTS:,CHANGES:"

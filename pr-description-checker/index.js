@@ -8537,7 +8537,7 @@ const github = __nccwpck_require__(5438);
 function run(){
   try{
     const bodyContains = core.getInput('bodyContains').split(',');
-
+    console.log(bodyContains);
     for(let keyword of bodyContains){
       if (github.context.payload.pull_request.body.indexOf(keyword) < 0) {
         core.setFailed("The description of the PR does not contain " + keyword)
